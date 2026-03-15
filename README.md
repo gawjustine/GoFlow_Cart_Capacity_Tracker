@@ -1,9 +1,9 @@
-# GoFlow - Cart Density Tracker
-This project monitors crowd density inside train cars with YOLOv8 Head Detector and models the fullness of the car 
-(measured in percentage) into a graphical user interface that "fills up" as the car fills up. A fully visible train indicates a completely full train.
-It also models the fullness onto a series of led lights that turn on according to the percentage as well. All three lights turned on indicates a completely full train.
+# GoFlow - Cart Capacity Tracker
+This project monitors crowd density inside train carts with YOLOv8 Head Detector and models the fullness of the cart 
+(measured in percentage) into a graphical user interface that "fills up" as the cart fills up. A fully visible train indicates a completely full train.
+It also models the fullness onto a series of LED lights that turn on according to the percentage as well. All three lights turned on indicates a completely full train.
 
-This project aims to integrate AI image detection, GUI, and visible light indicators to prompt individuals to move to less congested parts of the train.
+This project aims to integrate AI image detection, GUI, and visible light indicators to prompt passengers to move to less congested parts of the train.
 Highly dense crowds, especially during rush hour, often inhibit movement of passengers on and off the train, as well as place individuals at risk due to limited space
 to react in the event of an emergency. 
 
@@ -18,11 +18,11 @@ pip install ultralytics
 pip install pillow
 ````
 Don't forget to download nano.pt for the YOLO ai! Original owners: https://github.com/Abcfsa/YOLOv8_head_detector  
-You may need to set up a virtual environment to run Tkinter especially if you're on Windows.
+You may need to set up a virtual environment to run Tkinter, especially if you're on Windows.
 
 #### Hardware  
 Components used:
-1. 3 led lights
+1. 3 LED lights
 2. Breadboard
 3. MM jumper cables
 4. Raspberry Pi Pico
