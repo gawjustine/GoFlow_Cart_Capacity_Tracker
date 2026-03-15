@@ -5,10 +5,10 @@ window_width = 1280
 window_height = 675
 
 root = tk.Tk()
-root.title("Train Opacity Demo")
+root.title("GoFlow - Cart Capacity Tracker")
 root.geometry(f"{window_width}x{window_height}")
 
-# Create canvas matching window size (or image size)
+# Create canvas matching window size
 canvas = tk.Canvas(root, width=window_width, height=window_height)
 canvas.pack()
 
@@ -28,9 +28,11 @@ train_width, train_height = train_cropped.size
 
 train_item = canvas.create_image(640, 337, image=None)
 
-#Function to convert # heads to a %
+# Function to convert # heads to a %
 def count_to_percent(count):
-    max_capacity = 3 #modify later with research
+    max_capacity = 3
+    # 3 is a placeholder for testing & demo purposes
+    # modify to match actual GO Train Car Max Capacity
     if max_capacity <= 0:
         return 0
     percent = (count / max_capacity) * 100
@@ -46,9 +48,8 @@ def update_train_fill(percent):
     global tk_train_img
     tk_train_img = ImageTk.PhotoImage(new_img)
 
-    # Center the train on the background
+    # Position the train
     x = bg_img.width // 2 - 15
-    # y = bg_img.height // 2 + (train_height // 2 - visible_height // 2)
     y = bg_img.height // 2 + 44
     canvas.itemconfig(train_item, image=tk_train_img)
     canvas.coords(train_item, x, y)
