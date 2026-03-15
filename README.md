@@ -42,7 +42,7 @@ _Wiring Diagram: Note the parallel resistor setup used to brighten the LEDs_
 > **Important:** Refer to the Pico datasheet for pinouts. Ensure your LEDs are connected to the correct GP pins as defined in your code.
 
 ### Usage
-1. Download all files and allocate ensure that all libraries are installed.
+1. Download all files and ensure that all libraries are installed.
 2. Setup hardware and configure the serial port to be whichever port you plug your Pico into. For Windows your ports are labelled but for Mac or Linux, type in
    ````ls /dev/cu.usbmodem*```` into Terminal to determine which port your Pico is using. Paste that into the serial port.
 3. You can debug your Pico using the ````test_circuit.py```` file if the Pico is connecting but not turning on. Ensure connection is stable and run the file.
