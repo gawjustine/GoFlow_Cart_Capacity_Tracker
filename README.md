@@ -47,4 +47,8 @@ _Wiring Diagram: Note the parallel resistor setup used to brighten the LEDs_
    ````ls /dev/cu.usbmodem*```` into Terminal to determine which port your Pico is using. Paste that into the serial port.
 3. You can debug your Pico using the ````test_circuit.py```` file if the Pico is connecting but not turning on. Ensure connection is stable and run the file.
    Unplugging and repluggin the Pico typically works when the code is not running.
-4. The only file that should be run is the ````main.py```` file.
+4. You can modify the maximum capacity and therefore the tolerance of the lights and user interface in ````train_gui.py````.
+6. The only file that should be run is the ````main.py```` file.
+
+> [!TIP]
+> This program runs on a webcam, but you can import an external webcam and change line 9 in ````camcounter.py```` from 0 to 1 or whichever corresponding number to your external camera.
