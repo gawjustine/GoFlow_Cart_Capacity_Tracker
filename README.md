@@ -1,4 +1,4 @@
-# GenAi_Go_Train_Tracker
+# GoFlow - Cart Density Tracker
 This project monitors crowd density inside train cars with YOLOv8 Head Detector and models the fullness of the car 
 (measured in percentage) into a graphical user interface that "fills up" as the car fills up. A fully visible train indicates a completely full train.
 It also models the fullness onto a series of led lights that turn on according to the percentage as well. All three lights turned on indicates a completely full train.
